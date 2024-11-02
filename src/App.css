@@ -1,0 +1,260 @@
+/* Global Reset for Margin and Padding */
+/* Global Reset for Margin and Padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Include padding and borders in element's total width and height */
+}
+
+/* General Styles for the App */
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Header Styles */
+.header {
+  margin-bottom: 20px; /* Padding below the header */
+  text-align: center; /* Center the header text */
+}
+
+/* Home Heading */
+.home-heading {
+  text-align: center; /* Center the heading */
+  margin-bottom: 20px; /* Space below the heading */
+}
+
+/* Search Input Container Styles */
+.search-container {
+  display: flex;
+  justify-content: center; /* Center the search input */
+  align-items: center;
+  margin-bottom: 20px; /* Padding below the search container */
+}
+
+.search-input-container {
+  position: relative; /* Positioning context for the icon */
+  margin-right: 5px; /* Space between input and buttons */
+}
+
+.search-input {
+  width: 250px; /* Set your desired width here */
+  padding: 10px 40px 10px 15px; /* Padding with left padding of 15px */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.search-icon {
+  position: absolute; /* Positioning the icon inside the input */
+  right: 10px; /* Positioning from the right */
+  top: 50%; /* Center vertically */
+  transform: translateY(-50%); /* Adjust for vertical centering */
+  color: #999; /* Color of the icon */
+  pointer-events: none; /* Prevent clicks on the icon */
+}
+
+/* Add a wrapper to the buttons to align them to the right */
+.button-container {
+  display: flex; /* Flex container for buttons */
+  margin-left: auto; /* Push buttons to the right */
+}
+
+.login-button,
+.signin-button {
+  padding: 10px 15px; /* Adjust padding for buttons */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 5px; /* Space between buttons */
+}
+
+.login-button {
+  background-color: #007bff; /* Bootstrap primary color */
+  color: white;
+  padding-left: 15px; /* Added left padding for login button */
+}
+
+.signin-button {
+  background-color: #28a745; /* Bootstrap success color */
+  color: white;
+  padding-left: 15px; /* Added left padding for sign-up button */
+}
+
+
+/* App.css */
+
+/* Scroll container */
+.scroll-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 950px; /* Adjusted width */
+  margin: 0 auto; /* Center container on page */
+  overflow: hidden;
+  border: none; /* Ensure no border */
+  padding: 0 20px; /* Equal padding on left and right */
+}
+
+/* Destination List Styles */
+.destination-list {
+  display: flex;
+  overflow-x: auto; /* Allow horizontal scrolling */
+  scroll-behavior: smooth;
+  gap: 25px; /* Space between cards */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margin */
+}
+
+/* Card Styles */
+.card {
+  min-width: 250px; /* Increased width for better visibility */
+  max-width: 250px; /* Set max width to the same value */
+  height: 250px; /* Increased height for larger cards */
+  padding: 2px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: none; /* Ensure no box shadow */
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: none; /* Ensure no border */
+  margin: 0; /* Remove margins */
+}
+
+/* Card Image Styles */
+.card-image {
+  width: 100%;
+  height: 150px; /* Increased height for better visibility */
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+/* Card Title Styles */
+.card-title {
+  font-size: 16px; /* Slightly larger font for readability */
+  margin-top: 6px;
+  text-align: center;
+}
+
+/* Scroll Button Styles */
+.scroll-button {
+  background-color: #ffffff;
+  border: none; /* Remove button borders */
+  outline: none; /* Remove outline on focus */
+  font-size: 24px;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.scroll-button-left {
+  left: 10px; /* Adjusted to align with padding */
+}
+
+.scroll-button-right {
+  right: 10px; /* Adjusted to align with padding */
+}
+
+/* Remove focus outline for scroll buttons */
+.scroll-button:focus {
+  outline: none; /* Ensure no outline on focus */
+  box-shadow: none; /* Remove any box shadow */
+}
+
+/* Additional styles for destination details, etc. ... */
+
+/* DestinationDetails.css */
+
+.details {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  padding: 20px; /* Add some padding */
+  text-align: center; /* Center text */
+}
+
+.details-image {
+  width: 100%; /* Make image responsive */
+  max-width: 400px; /* Set a maximum width for the image */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Optional: rounded corners */
+  margin-bottom: 20px; /* Space below the image */
+}
+
+.booking {
+  display: flex;
+  flex-direction: column; /* Stack labels and inputs */
+  align-items: center; /* Center inputs */
+  margin-top: 20px; /* Space above booking section */
+}
+
+.booking label {
+  margin: 10px 0; /* Space between labels */
+}
+
+.booking button {
+  margin-top: 10px; /* Space above the button */
+  padding: 10px 20px; /* Button padding */
+  font-size: 16px; /* Button text size */
+  cursor: pointer; /* Pointer cursor on hover */
+  background-color: green; /* Change button background color to green */
+  color: white; /* Change text color to white for better contrast */
+  border: none; /* Remove default border */
+  border-radius: 4px; /* Optional: rounded corners */
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.booking button:hover {
+  background-color: darkgreen; /* Darker shade on hover for effect */
+}
+
+/* App.css */
+
+/* Main container for the home page */
+.home-container {
+  max-width: 800px; /* Adjust this width as needed */
+  margin: 0 auto; /* Centers the container */
+  padding: 5px; /* Optional padding */
+}
+
+/* Form container */
+.form-container {
+  max-width: 400px; /* Decrease width of form container */
+  margin: 20px auto; /* Centers the form container */
+  padding: 20px;
+  border: 1px solid #ccc; /* Optional: border for form container */
+  border-radius: 5px; /* Optional: rounded corners */
+}
+
+/* Input fields in the form */
+.form-container input {
+  width: 100%; /* Makes input fill the form container */
+  padding: 10px; /* Space inside the input */
+  margin-bottom: 15px; /* Space between inputs */
+  border: 1px solid #ccc; /* Border styling */
+  border-radius: 4px; /* Rounded corners */
+  font-size: 14px; /* Decrease font size if needed */
+}
+
+/* Button styling */
+.form-container button {
+  width: 100%; /* Makes button fill the form container */
+  padding: 10px; /* Space inside the button */
+  background-color: #007bff; /* Button color */
+  color: white; /* Text color */
+  border: none; /* Remove border */
+  border-radius: 4px; /* Rounded corners */
+  font-size: 16px; /* Adjust button font size */
+  cursor: pointer; /* Pointer on hover */
+}
+
+.form-container button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
